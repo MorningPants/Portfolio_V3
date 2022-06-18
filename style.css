@@ -1,0 +1,102 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+* {
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black,
+    0 0 2px black, 0 0 2px black, 0 0 20px black, 0 0 20px black, 0 0 20px black;
+}
+
+body {
+  color: #eeeeee;
+  padding:  0 2% 10% max(50px, 10%);
+ 
+  /* font-size: min(1.1rem, calc(0.3rem + 3vw)); */
+  font-family: "Verdana";
+}
+
+h1 {
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black,
+    0 0 2px black, 0 0 2px black, 0 0 20px black, 0 0 20px black, 0 0 20px black;
+  text-align: center;
+  font-size: min(2.1rem, calc(0.6rem + 6vw));
+}
+
+p {
+  max-width: min(50em, 80vw);
+  margin: 2em auto;
+  font-size: min(1.1rem, calc(0.3rem + 2.5vw));
+}
+
+nav {
+  position: fixed;
+  width: 60px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 70%, transparent);
+  color: #eeeeee;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vw;
+  z-index: -1;
+  transform: rotate(90deg) translateY(-73.5vw) translateX(50%);
+  transform-origin: top;
+}
+.videofade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55vw;
+  width: 100vw;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 1) 90%);
+  z-index: -1;
+}
+#bgcontainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vw;
+  z-index: -1;
+}
+body {
+  background-color: black;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    gap: .5em;
+}
+nav a{
+    color: #eeeeee;
+    border-radius: 50%;
+    padding: 2px;
+    transition: all .2s ease;
+}
+
+nav a:hover, nav a:active{
+    background-color: rgba(255,255,255,.4);
+    box-shadow: 0 0 10px 5px rgba(255,255,255,.5);
+}
+
+section{
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+section:target{
+    background-color: rgba(255,255,255,.1);
+    box-shadow: 0 0 20px 10px rgba(255,255,255,.1);
+}
