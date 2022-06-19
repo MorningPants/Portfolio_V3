@@ -1,6 +1,6 @@
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 25px;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 25px;
 }
 
 * {
@@ -10,8 +10,8 @@ html{
 
 body {
   color: #eeeeee;
-  padding:  0 2% 10% max(50px, 10%);
- 
+  padding: 0 2% 10% max(50px, 10%);
+
   /* font-size: min(1.1rem, calc(0.3rem + 3vw)); */
   font-family: "Verdana";
 }
@@ -21,22 +21,21 @@ h1 {
     0 0 2px black, 0 0 2px black, 0 0 20px black, 0 0 20px black, 0 0 20px black;
   text-align: center;
   font-size: min(2.1rem, calc(0.6rem + 6vw));
+  margin: 5em;
+}
+h2{
+  text-align: center;
 }
 
 p {
-  max-width: min(50em, 80vw);
-  margin: 2em auto;
+  max-width: min(70%, 80vw);
+  margin: 2em;
   font-size: min(1.1rem, calc(0.3rem + 2.5vw));
 }
 
-nav {
-  position: fixed;
-  width: 60px;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 70%, transparent);
-  color: #eeeeee;
+p:nth-child(odd){
+    text-align: end;
+    margin-left: auto;
 }
 
 video {
@@ -71,32 +70,57 @@ body {
   background-color: black;
 }
 
-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    gap: .5em;
+nav {
+  position: fixed;
+  width: 60px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 70%, transparent); */
+  background-color: rgba(0, 0, 0, 0.9) ;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.9);
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  gap: 0.5em;
 }
-nav a{
-    color: #eeeeee;
-    border-radius: 50%;
-    padding: 2px;
-    transition: all .2s ease;
+nav a {
+  color: #eeeeee;
+  border-radius: 50%;
+  padding: 2px;
+  transition: all 0.2s ease;
 }
 
-nav a:hover, nav a:active{
-    background-color: rgba(255,255,255,.4);
-    box-shadow: 0 0 10px 5px rgba(255,255,255,.5);
+nav a:hover,
+nav a:active {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
 }
 
-section{
-    border: 3px solid black;
-    border-radius: 30px;
+section {
+  border: 3px solid black;
+  border-radius: 30px;
+  margin: 2em;
+  padding: 2em;
+  transition: all 0.5s ease;
 }
 
-section:target{
-    background-color: rgba(255,255,255,.1);
-    box-shadow: 0 0 20px 10px rgba(255,255,255,.1);
+section:target,
+section:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.1);
+}
+
+#home {
+  position: absolute;
+  top: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
